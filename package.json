@@ -6,7 +6,15 @@
   "repository": "git@github.com:Tenkir/kokode.git",
   "author": "Jonathan Blair <jon.blair@littlecinema.net>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/dev",
+    "build": "node scripts/build",
+    "migrate": "npx prisma migrate dev",
+    "migrate:deploy": "npx prisma migrate deploy",
+    "generate": "npx prisma generate"
+  },
   "workspaces": [
-    "packages/app"
+    "packages/app",
+    "packages/database"
   ]
 }

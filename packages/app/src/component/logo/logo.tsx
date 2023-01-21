@@ -6,6 +6,7 @@ export const Logo = () => {
     <Flex direction="column">
       <Text
         fontSize="2em"
+        fontWeight="400"
         lineHeight="1em"
         letterSpacing="0.25em"
         className={supplyMono.className}
